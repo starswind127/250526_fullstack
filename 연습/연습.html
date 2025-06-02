@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>산도의 게임 도우미</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1e1e1e;
+      color: #eee;
+      padding: 20px;
+    }
+    textarea, input, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+    .timer {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 산도의 게임 도우미</h1>
+
+  <h2>📝 메모장</h2>
+  <textarea id="note" rows="10" placeholder="퀘스트 정보나 공략을 정리해봐"></textarea>
+
+  <h2>⏰ 타이머</h2>
+  <input type="number" id="seconds" placeholder="초 단위로 입력">
+  <button onclick="startTimer()">타이머 시작</button>
+  <div id="timerDisplay" class="timer"></div>
+
+  <script>
+    function startTimer() {
+      const seconds = parseInt(document.getElementById('seconds').value, 10);
+      const display = document.getElementById('timerDisplay');
+      let remaining = seconds;
+
+      const interval = setInterval(() => {
+        if (remaining <= 0) {
+          clearInterval(interval);
+          display.innerText = '⏰ 타이머 종료!';
+          alert("타이머 끝!");
+        } else {
+          display.innerText = `남은 시간: ${remaining}초`;
+          remaining--;
+        }
+      }, 1000);
+    }
+  </script>
+</body>
+</html>

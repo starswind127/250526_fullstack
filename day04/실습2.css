@@ -1,0 +1,30 @@
+
+.background {
+    width: 500px;
+    padding: 5px 0px 25px 8px;
+    text-align: center;
+    color: black;
+    margin: 250px auto;
+    box-shadow: 3px 3px 10px blueviolet;
+    border-radius: 10px;
+}
+
+.id, .pw{
+    width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.button input {
+    background-color: blue;
+    color: white;
+    border: 1px solid gray;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}

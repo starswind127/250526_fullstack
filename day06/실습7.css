@@ -1,0 +1,119 @@
+*{ padding: 0px; margin: 0px; }
+*{ box-sizing: border-box; }
+a{ 
+    text-decoration: none;
+    color: black;
+}
+li{ list-style-type: none;}
+#header{
+   
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    
+    width: 1280px;     
+    margin:  15px auto; 
+}   
+.top-menu{ 
+    display: flex; justify-content: flex-end;
+}
+.main-menu{
+    display: flex; justify-content: flex-end;
+}
+.main-menu > li{ 
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px 30px 100px; 
+}
+
+#main-img > img{   width: 100%; }
+#main{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 30px auto;
+}
+.sidebar{ width: 250px; }
+.content{ 
+    display: flex; justify-content: space-between;
+    width: 1000px; 
+}
+.content > .leftbox{ width: 490px; }
+.content > .rightbox{ width: 490px; }
+
+.sidebar > .title{
+    background-color: #0ca9a2;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.sidebar > .comment{
+    line-height: 160%;
+    padding: 5px;
+}
+.sidebar > .searchbox > .search-input{
+    width: 180px; height: 30px;
+    border-radius: 10px;
+    padding: 1px 7px; 
+}
+.sidebar > .searchbox > .search-btn{
+    padding: 4px 10px; 
+}
+.sidebar > .searchbox { margin: 10px 0px;}
+.sidebar > .sub-title{
+    border-top: solid 2px black;
+    border-bottom: solid 1px #eeeeee;
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 10px;
+}
+.sidebar > .sub-menu > li{ padding: 5px 10px; }
+
+.content .sub-title{
+    border-bottom: solid 2px black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.content > .leftbox > .board > li{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+.content > .leftbox > .board {
+    margin-bottom: 50px;
+}
+.content > .rightbox > .product-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content > .rightbox > .product-list > .product{
+    width: 240px;
+    margin-bottom: 30px;
+}
+
+#footer{
+    background-color: #05344e;
+    color: white; padding: 20px 0px;
+}
+.footer-inner{
+    width: 1280px; margin: 0 auto;
+}
+.footer-inner > .ftop-menu{
+    display: flex;
+    margin-bottom: 30px;
+}
+.footer-inner > .ftop-menu > li{ margin-right: 40px; }
+.footer-inner > .fbottom-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-inner > .fbottom-menu .footer-title{
+    margin-bottom: 10px;
+}
+.footer-inner > .fbottom-menu li{
+    margin: 5px 0px;
+}
+
+

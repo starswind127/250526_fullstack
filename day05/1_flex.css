@@ -1,0 +1,36 @@
+.box{
+    border: 1px solid red;
+    width: 100px;
+}
+
+.flexbox1{
+    border: 1px solid blue;
+    width: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flexbox2{
+    border: 1px solid purple;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox3{
+    border: 1px solid purple;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.flexbox4{
+    border: 1px solid purple; width: 250px;
+    flex-direction: row;
+    display: flex;
+}
+
+.flexbox5{
+    border: 1px solid blue ;width: 250px;
+    display: flex;
+    flex-direction: column;
+}

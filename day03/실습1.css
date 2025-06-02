@@ -1,0 +1,21 @@
+.제목구역{
+    font-family : "궁서" ; 
+    font-size: 50px;        
+    font-style: italic;     
+}
+.내용구역{ 
+    font-family : "휴먼둥근헤드라인" ;
+    color: blue;        
+    word-spacing:10px;     
+    letter-spacing: 5px; 
+    line-height: 150%;      
+    font-weight: bold;      
+}
+.작성자구역{
+    text-align: center;
+    text-decoration: underline overline line-through ; 
+    color: red; 
+    text-shadow : 1px 1px 5px gray ;
+}
+.상{ font-size: 35px; }
+.중 {font-size: 20px; }
