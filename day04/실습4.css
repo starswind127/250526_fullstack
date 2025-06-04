@@ -1,0 +1,25 @@
+.nemo{ 
+    width: 400px;
+    margin-left: 10px;
+    border: 0.5px solid rgb(189, 189, 189);
+    text-align: left;
+    padding: 5px 0px 25px 8px;
+    margin: 250px auto;
+
+}
+
+
+
+hr{
+    background: rgb(189, 189, 189);
+    height: 1px;
+    width: 400px ;
+    border: 0;
+}
+
+.review {
+            margin-top: 20px;
+
+            font-size: 18px;
+            color: orange;
+        }

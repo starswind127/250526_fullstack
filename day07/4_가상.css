@@ -1,0 +1,50 @@
+/*
+    가상 클래스
+        - 선택자 : 가상클래스명{ 속성명:가상명 }
+        - 가상클래스 종류
+            1.  :hover   해당 선택자에 마우스를 올렸을때 css 적용
+*/
+a{ text-decoration: none; color: black;}
+
+/*1. 만약 해당선택지를 hover 했을때*/
+a:hover{
+    color: red;
+    text-decoration: underline;/* 밑줄 */
+}
+/*2. 만약 해ㅐ당 선택지 링크에 방문한 적이 있으면*/
+a:visited{
+    color: orange;
+}
+
+/*3. 만약 해당 선택자를 클릭했을때*/
+a:active{
+    color: blue;
+}
+
+/* [가상요소]
+    -선택자 ::가상요소명{ content : '가상요소';}
+    1. ::before
+    2. ::after
+*/
+
+/* 1 */
+.box1::before{
+    content: "[가상요소 시작점]";
+    font-weight: bold;
+}
+
+.box1::after{
+    content: "[가상요소 끝점]";
+    font-weight: bold;
+}
+
+.box2{ list-style-type: none;}
+.box2 >li::before{
+    content: "★"; color: #dec0de;
+}
+.box3::before{
+    content: url('../day02/태극기.jpg');/* url(사진이미지) */
+}
+.box3::after{
+    content: "🕰️";/* 이모지 */
+}
