@@ -13,7 +13,7 @@ console.log(수량);
 
 let 사용자이름 = prompt("이름:");
 let 운동종류 = prompt("운동 종류:");
-let 운동시간 = prompt("운동 시간: (시간으로적어주세요)");
+let 운동시간 = prompt("운동 시간:");
 
 const 칼로리 = 운동시간 * 7;
 
