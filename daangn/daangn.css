@@ -1,0 +1,31 @@
+*{
+    padding: 0px; margin: 0px;
+    box-sizing: border-box; font-size: 12px;
+}
+li{ list-style-type: none;}
+a{ color: black; text-decoration: none;}
+
+#header{
+    width: 100%;
+    display: contents;
+}
+
+#top_menu{
+    display: flex; justify-content: center; 
+    padding: 10px;
+}
+
+#download{
+    display: flex; justify-content: flex-end;
+}
+
+#search_box > input{
+    border: 1px black; padding: 5px; width: 130px; 
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+#bottom_menu{
+    display: flex; justify-content: center; 
+    padding: 10px;
+}
