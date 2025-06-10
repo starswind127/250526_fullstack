@@ -5,40 +5,30 @@
     font-family: sans-serif;
 }
 
-#header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 32px;
-  border-bottom: 1px solid #eee;
-}
-
-body {
-    background-color: #fff;
-    color: #222;
-}
-
 #main_header {
     padding: 20px 40px;
     border-bottom: 1px solid #eee;
 }
 
-#menu_top, #keyword_bar {
-  display: flex;
-  flex-wrap: wrap;   /* 줄바꿈 허용 */
-  gap: 12px;          /* 메뉴 간격 */
-  justify-content: center;
+.menu_top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  padding: 0 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  margin-top: 60px; /* top-bar 만큼 아래로 밀어주기 */
 }
 
 .menu_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    height: 35px;
 }
 
 .main_menu {
@@ -58,9 +48,8 @@ body {
     color: white;
     border: none;
     padding: 8px 14px;
-    border-radius: 6px;
+    border-radius: 10px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .search_bar {
@@ -69,6 +58,7 @@ body {
     gap: 10px;
     align-items: center;
     background-color: #f7f7f7;
+    border: 1px black;
     padding: 10px 15px;
     border-radius: 20px;
 }
