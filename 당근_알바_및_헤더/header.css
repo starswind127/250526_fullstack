@@ -19,17 +19,15 @@ li{ list-style: none; }
 .announcement {
 position: fixed;
       bottom: 20px;
-      right: 20px;
+      right: 320px;
       background-color: #ff6600;
       color: white;
-      padding: 12px 20px;
+      padding: 8px 20px;
       border-radius: 8px;
       font-weight: bold;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       cursor: pointer;
-      z-index: 9999;
-      transition: background-color 0.3s;
     }
 
     .announcement:hover {
