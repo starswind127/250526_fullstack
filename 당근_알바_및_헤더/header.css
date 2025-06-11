@@ -20,9 +20,8 @@ li{ list-style: none; }
     top: 0;
     left: 0; 
     width: 80%; 
-    height: 60px; 
+    height: 72px; 
     background-color: white; 
-    padding: 0 100px; 
     max-width: 1240px;
     margin: 0 auto;
     display: flex;
@@ -96,20 +95,23 @@ li{ list-style: none; }
   gap: 12px;
   font-family: system-ui, sans-serif;
   justify-content: center;
-  margin-top: 40px;
-  font-size: 14px;
-  
+  margin-top: 6px;
+  font-size: 14px;  
 }
 
 .location_btn {
-    background-color: #797985;
-    color: #fff;
-    padding: 10px 16px;
+    background-color: #ccc;
+    color: black;
+    padding: 15px 20px;
     border-radius: 50px;
+    max-width: 95px;
+    max-height: 40px;
+    font-weight: bold;
     border: none;
     display: flex;
     align-items: center;
     cursor: pointer;
+
 }
 
 
@@ -121,9 +123,12 @@ li{ list-style: none; }
     border: 1px solid #ccc;
     border-radius: 50px;
     gap: 10px;
-    padding: 8px 12px;
-    width: 1280px;
+    flex: 1;
+    padding: 8px 16px;
+    max-width: 1150px;
+    max-height: 40px;
     cursor: pointer;
+    
 }
 
 .category_select,
@@ -152,7 +157,11 @@ li{ list-style: none; }
 }
 
 .keyword_bar {
-    margin-top: 10px;
+    margin-top: 12px;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .keywords {
@@ -161,21 +170,21 @@ li{ list-style: none; }
     justify-content: center;
     list-style: none;
     color: #555;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .keywords a {
     text-decoration: none;
-    color: black;
+    color: rgb(65, 65, 65);
     font-size: 14px;
 }
 
-.keywords li {
+.keywords li a {
   margin-right: 15px;
 }
 
 .populer {
     color: gray;
-    font-weight: bold;
     font-size: 15px;
+    margin-right: 10px;
 }
