@@ -16,6 +16,26 @@ li{ list-style: none; }
     z-index: 1;
 }
 
+.announcement {
+position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      z-index: 9999;
+      transition: background-color 0.3s;
+    }
+
+    .announcement:hover {
+      background-color: #e65500;
+    }
+
 .menu_top {
     top: 0;
     left: 0; 
@@ -100,11 +120,11 @@ li{ list-style: none; }
 }
 
 .location_btn {
-    background-color: #ccc;
+    background-color: #efefef;
     color: black;
     padding: 15px 20px;
     border-radius: 50px;
-    max-width: 95px;
+    max-width: 100px;
     max-height: 40px;
     font-weight: bold;
     border: none;
@@ -114,6 +134,9 @@ li{ list-style: none; }
 
 }
 
+.location_btn:hover {
+  background-color: #e0e0e0;
+}
 
 
 .search_bar {
