@@ -28,11 +28,15 @@ position: fixed;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       cursor: pointer;
+      z-index: 2;
     }
+
 
     .announcement:hover {
       background-color: #e65500;
     }
+    
+
 
 .menu_top {
     top: 0;
