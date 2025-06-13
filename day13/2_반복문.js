@@ -22,7 +22,6 @@ for( let index = 0 ; index <= scores.length -1 ; index++){
 // let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A'];
 
 let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A'];
-let continue
 
 // 문제 10: 학생 점수 시각화하기 
 // 주어진 학생 이름과 점수 배열을 이용하여, 각 학생의 점수를 동그라미(●, ○)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
