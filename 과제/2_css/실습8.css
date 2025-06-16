@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #222;
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background: white;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo span {
+    color: blue ;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    }
+
+.main_image {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.main_image img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+.info_section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px 0;
+    background-color: white;
+}
+
+.info_box {
+    display: flex;
+    gap: 15px;
+    max-width: 400px;
+    flex-basis: 45%;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.info_box p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.info_box span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.studio_gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background: #f0f0f0;
+}
+
+.studio_item {
+    text-align: center;
+    max-width: 200px;
+    font-size: 12px;
+}
+
+.studio_item span{
+    font-weight: bold;
+    font-size:  14px;
+}
+
+.studio_item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #26292f;
+    color: white;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact {
+    flex: 1;
+    font-weight: bold;
+}
+
+.contact span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.company_info {
+    flex: 2;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.company_intro {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.address {
+    font-size: 14px;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.social img {
+    width: 24px;
+}
