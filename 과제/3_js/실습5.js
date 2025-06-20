@@ -35,8 +35,19 @@ console.log("최종 결제 금액:", finalPrice);
 // 겨울: 12, 1, 2월
 // 만약 1~12 이외의 숫자를 입력하면 '잘못된 월입니다.'를 출력하세요.
 
-let month = ['1','2','3','4','5','6','7','8','9','10','11','12']
+let month = parseInt(prompt("월(1~12)을 입력하세요:"), 10);
 
+if (month == 3 || month == 4 || month == 5) {
+  console.log("봄");
+} else if (month == 6 || month == 7 || month == 8) {
+  console.log("여름");
+} else if (month == 9 || month == 10 || month == 11) {
+  console.log("가을");
+} else if (month == 12 || month == 1 || month == 2) {
+  console.log("겨울");
+} else {
+  console.log("잘못된 월입니다.");
+}
 
 
 // 문제 5: 세 수 중 가장 큰 수 찾기

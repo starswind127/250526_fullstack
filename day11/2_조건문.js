@@ -89,10 +89,10 @@ if( seatList[seat] == 'O' ){ // 만약에 좌석목록(seatList)에서 선택(�
 // 조건 : 점수>=900 , 점수 >= 700 && 점수 < 900 , 점수 >= 500 && 점수 <700 , 점수 < 500
 /*
 let gamePoint = Number( prompt('게임점수 : ') )
-// if( gamePoint >= 900 ){ console.log('A급 경품'); }
-// if( gamePoint >= 700 && gamePoint < 900 ){ console.log('B급 경품'); }
-// if( gamePoint >= 500 && gamePoint <700 ){ console.log('C급 경품'); }
-// if( gamePoint < 500 ){ console.log('참가상'); }
+if( gamePoint >= 900 ){ console.log('A급 경품'); }
+if( gamePoint >= 700 && gamePoint < 900 ){ console.log('B급 경품'); }
+if( gamePoint >= 500 && gamePoint <700 ){ console.log('C급 경품'); }
+if( gamePoint < 500 ){ console.log('참가상'); }
     // if 한개당 하나의 결과를 도출 ( 다수 조건에 다수 결과를 나올수도 있다 ) vs if ~ else if ( 다수 조건에 하나의 결과 )
 if( gamePoint >= 900 ){ console.log('A급 경품'); }
 else if( gamePoint >= 700  ){ console.log('B급 경품'); } // && gamePoint < 900 생략가능 : 앞 조건에 이미 900점이상
