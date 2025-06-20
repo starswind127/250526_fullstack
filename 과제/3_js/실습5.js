@@ -53,6 +53,15 @@ if (month == 3 || month == 4 || month == 5) {
 // 문제 5: 세 수 중 가장 큰 수 찾기
 // 서로 다른 세 개의 정수를 입력받아, 가장 큰 수를 출력하는 프로그램을 작성하시오.
 
+let a = parseInt(prompt("첫 번째 수:"), 10);
+let b = parseInt(prompt("두 번째 수:"), 10);
+let c = parseInt(prompt("세 번째 수:"), 10);
+let max = a;
+if (b > max) max = b;
+if (c > max) max = c;
+console.log("가장 큰 수는:", max);
+
+
 // -------------------------------------------------------------------------------------------------
 
 // 문제 6: 윤년 판별기
@@ -61,6 +70,13 @@ if (month == 3 || month == 4 || month == 5) {
 // 연도가 4의 배수이면서, 100의 배수는 아닐 때
 // 또는 연도가 400의 배수일 때
 // 출력 예시: '2024년은 윤년입니다.' 또는 '2023년은 평년입니다.'
+
+let year = parseInt(prompt("연도를 입력하세요:"), 10);
+if ((year % 4 == 0 && year % 100 !== 0) || year % 400 === 0) {
+    console.log(year + "년은 윤년입니다.");
+} else {
+    console.log(year + "년은 평년입니다.");
+}
 
 /*문제 7: 세 수 오름차순 정렬
 서로 다른 세 개의 정수를 입력받아, 오름차순(작은 수부터 큰 수 순서)으로 정렬하여 출력하는 프로그램을 작성하시오.
@@ -137,9 +153,32 @@ else{ console.log( '플레이어2 승리'); } // 그외
 // 차량 번호 목록: let carArray = [ '250어7142', '142가7415', '888호8888' ];
 // 주차 위치 목록: let locationArray = [ 'A1', 'B3', 'C2' ];
 // 사용자로부터 차량 번호를 입력받아, carArray에서 해당 차량을 찾은 뒤 locationArray에 있는 그 차량의 주차 위치를 찾아 출력하는 프로그램을 작성하시오. 만약 해당하는 차량 번호가 없다면 '차량이 존재하지 않습니다.'를 출력하시오.
+let carArray = [ '250어7142', '142가7415', '888호8888' ];
+let locationArray = [ 'A1', 'B3', 'C2' ];
+let carNum = prompt("차량 번호를 입력해주세요");
+if( carNum == carArray[0] ){
+    console.log(locationArray[0]);
+}else if( carNum == carArray[1] ){
+    console.log(locationArray[1]);
+}else if( carNum == carArray[2] ){
+    console.log(locationArray[2]);
+}else{
+    console.log("차량이 존재하지 않는것 같습니다.");
+}
 
 
 // 문제 10: 수강 신청 목록에서 과목 제외하기
 // 현재 수강 신청한 과목 목록이 배열로 주어져 있습니다.
 // let courseList = ['수학', '영어', '과학', '국어'];
 // 사용자로부터 제외하고 싶은 과목명을 입력받아, courseList에 해당 과목이 존재하면 목록에서 삭제한 뒤 변경된 배열 전체를 출력하세요. 만약 존재하지 않는 과목이면 '해당 과목은 신청 목록에 없습니다.'를 출력하는 프로그램을 작성하시오.
+
+let courseList = ['수학', '영어', '과학', '국어'];
+let remove = prompt("제외할 과목명을 입력하세요:");
+let index = courseList.indexOf(remove);
+if (index !== -1) {
+  courseList.splice(index, 1);
+  console.log("변경된 수강 목록:", courseList);
+} else {
+  console.log("해당 과목은 신청 목록에 없습니다.");
+}
+console.log(courseList)
