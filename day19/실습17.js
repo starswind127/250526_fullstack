@@ -39,4 +39,4 @@ function checkStatus(){
     }
     // 5. 비교에 따른 행동2
     alert('없는 번호 입니다.');
-} // func end 
+} // func end   
