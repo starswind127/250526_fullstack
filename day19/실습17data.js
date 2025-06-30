@@ -11,4 +11,4 @@ function getLocalStorage(){
         waitingList = JSON.parse(waitingList)
     }
     return waitingList; // 웹스토리지 에서 조회된 배열을 반환하는 함수, 없으면 []빈배열 , 있으면 [{},{}]
-}
+}  
